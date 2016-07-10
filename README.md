@@ -18,9 +18,9 @@ For homework tonight we are going to make a simple Sinatra application, your fir
 - Create a Sintra application that contains two routes
 - The first route ``/`` contains the following text 
 
-> Stranded on desert island each day you search one beach each day.
+> Stranded on desert island, each day you search one beach.
 
-Along with two links ``/beach?location=west``, labeled ``West Beach``, and ``/beach?location=east``, labeled ``East Beach``. 
+Along with two links ``/beach?location=west``, labeled ``Search West Beach``, and ``/beach?location=east``, labeled ``Search East Beach``. 
 - The second route ``/beach`` returns different text based on the query param:
 
 If query param ``location = east``, the page should show:
@@ -33,9 +33,14 @@ If query param ``location = west``, the page should show:
 
 Every ``/beach`` should also show links to ``/beach?location=west`` and ``/beach?location=east``. 
 
-- Every 5 questions the message should be:
+- Every 5 beaches visited the message should be:
 
 > Ouch! There was a crab in the bottle.
+
+### Tips 
+
+- When testing the 5 beaches, remember that you can store variables between requests using ``@@`` variables. 
+- When testing the 5 beaches, you may want to use ``rackup`` manually since your count will be reset each time the server is reset the count will be too.
 
 ### Bonus 
 
