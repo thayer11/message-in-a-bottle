@@ -31,16 +31,16 @@ If query param ``location = west``, the page should show:
 
 > It's totally awesome to write messages in your used bottles at the end of a spring break rager!
 
-Every ``/beach`` should also show links to ``/beach?location=west`` and ``/beach?location=east``. 
+Every ``/beach`` page should also show links to ``/beach?location=west`` and ``/beach?location=east``. 
 
-- Every 5 beaches visited the message should be:
+- Every 5 beaches visited should have the following message:
 
 > Ouch! There was a crab in the bottle.
 
 ### Tips 
 
-- When testing the 5 beaches, remember that you can store variables between requests using ``@@`` variables. 
-- When testing the 5 beaches, you may want to use ``rackup`` manually since your count will be reset each time the server is reset the count will be too.
+- When testing the 5 beaches message, remember that you can store variables between requests using ``@@`` variables. 
+- When testing the 5 beaches message, you may want to use ``rackup`` manually since your count will be reset each time the server is reset the count will be too.
 
 ### Bonus 
 
@@ -52,7 +52,7 @@ Every ``/beach`` should also show links to ``/beach?location=west`` and ``/beach
 
 ## Deliverable
 
-Submit your github repo with a working a Sinatra app. The starter code includes a views directory with a ``layout.erb`` file and a ``publc/css/bottle.css`` file.
+Submit your github repo with a working a Sinatra app. The starter code includes a views directory with a ``layout.erb`` file and a ``publc/css/message.css`` and ``public/images/beaches.jpg`` files.
 
 ### Additional Resources
 
